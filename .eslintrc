@@ -1,0 +1,74 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    "semi": [2],
+    "no-console": [2],
+    "jsx-a11y/no-noninteractive-tabindex": [0],
+    "no-debugger": [1],
+    "no-unused-vars": [1, {
+      "args": "none",
+      "ignoreRestSiblings": true
+    }],
+    "react/jsx-one-expression-per-line": [0],
+    "no-trailing-spaces": [2],
+    "eol-last": [2],
+    "eqeqeq": [2],
+    "comma-dangle": [2, "only-multiline"],
+    "quotes": [2, "single"],
+    "import/no-unresolved": [2, { "ignore": ["^@/", "^htsc/"] }],
+    "no-plusplus": [0],
+    "no-return-assign": [0],
+    "class-methods-use-this": [0],
+    "no-restricted-properties": [0, {
+      "object": "Math",
+      "property": "pow"
+    }],
+    "prefer-destructuring": [0],
+    "object-property-newline": [0],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": [1, { "forbid": ["any"] }],
+    "react/no-unused-prop-types": [0],
+    "react/sort-comp": [0],
+    "react/prefer-stateless-function": [0],
+    "react/no-danger": [0],
+    "react/destructuring-assignment": [0],
+    "jsx-a11y/media-has-caption": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "jsx-a11y/no-noninteractive-element-interactions": [0],
+    "jsx-a11y/anchor-is-valid": [0],
+    "jsx-a11y/click-events-have-key-events": [0],
+    "jsx-a11y/label-has-associated-control": [0],
+    "jsx-a11y/label-has-for": [0],
+    "import/no-anonymous-default-export": ["error", {
+      "allowArrowFunction": true,
+      "allowAnonymousClass": true,
+      "allowAnonymousFunction": true,
+      "allowLiteral": true,
+      "allowObject": false,
+      "allowArray": true
+    }],
+    "import/prefer-default-export": [0]
+  },
+  "overrides": [
+    {
+      "files": ["src/models/**/*.js"],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "fetch": true,
+    "EMP_ID": true,
+    "$": true
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="decorator" content="framework-1.0.2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <style>
+    #feedback-submit-error,
+    #feedback-submit-success {
+      position: fixed;
+      z-index: 10;
+      top: -15px !important;
+      right: 420px !important;
+      bottom: auto !important;
+    }
+
+    body,
+    .react-body,
+    .react-body.ant-v2-compatible {
+      position: relative;
+      background-color: rgb(244, 246, 249);
+      line-height: 1.5 !important;
+    }
+
+    .index-loading-container {
+      position: fixed;
+      top: 40%;
+      left: calc(50% - 250px);
+      width: 500px;
+      height: 100px;
+      background-color: rgb(244, 246, 249);
+    }
+
+    .index-content {
+      text-align: center;
+    }
+
+    .index-title {
+      font-size: 24px;
+      vertical-align: middle;
+      margin-left: 8px;
+      color: #333;
+      line-height: 36px;
+    }
+
+    .index-img {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .index-loading {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #108ee9;
+      border-top-color: transparent;
+      margin: 0;
+      padding: 0;
+      line-height: 18px;
+      font-size: 12px;
+      border-radius: 50%;
+      vertical-align: middle;
+      -webkit-animation: animations 1s linear infinite forwards;
+      -moz-animation: animations 1s linear infinite forwards;
+      animation: animations 1s linear infinite forwards;
+    }
+
+    @-webkit-keyframes animations {
+      0% {
+        -webkit-transform: rotatez(0)
+      }
+
+      17% {
+        -webkit-transform: rotatez(60deg)
+      }
+
+      34% {
+        -webkit-transform: rotatez(120deg)
+      }
+
+      51% {
+        -webkit-transform: rotatez(180deg)
+      }
+
+      68% {
+        -webkit-transform: rotatez(240deg)
+      }
+
+      85% {
+        -webkit-transform: rotatez(300deg)
+      }
+
+      100% {
+        -webkit-transform: rotatez(360deg)
+      }
+    }
+
+    @-moz-keyframes animations {
+      0% {
+        -moz-transform: rotatez(0)
+      }
+
+      17% {
+        -moz-transform: rotatez(60deg)
+      }
+
+      34% {
+        -moz-transform: rotatez(120deg)
+      }
+
+      51% {
+        -moz-transform: rotatez(180deg)
+      }
+
+      68% {
+        -moz-transform: rotatez(240deg)
+      }
+
+      85% {
+        -moz-transform: rotatez(300deg)
+      }
+
+      100% {
+        -moz-transform: rotatez(360deg)
+      }
+    }
+
+    @keyframes animations {
+      0% {
+        transform: rotatez(0)
+      }
+
+      17% {
+        transform: rotatez(60deg)
+      }
+
+      34% {
+        transform: rotatez(120deg)
+      }
+
+      51% {
+        transform: rotatez(180deg)
+      }
+
+      68% {
+        transform: rotatez(240deg)
+      }
+
+      85% {
+        transform: rotatez(300deg)
+      }
+
+      100% {
+        transform: rotatez(360deg)
+      }
+    }
+
+    .index-loading-text {
+      vertical-align: middle;
+      margin-left: 5px;
+      color: #999;
+      font-size: 12px;
+    }
+
+    #feedback-overview {
+      top: calc(50% - 207px) !important;
+      left: calc(50% - 250px) !important;
+      bottom: auto !important;
+    }
+
+    .feedback-submit-btn.feedback-btn-blue {
+      background: #108ee9;
+      border: 1px solid #108ee9;
+    }
+  </style>
+  <script type="text/javascript">
+    window.canvas = {};
+    window.home_share_var = {};
+    window.innerDocClick = true;
+    window.document.documentElement.addEventListener('mouseover', function () {
+      window.innerDocClick = true;
+    });
+    window.document.documentElement.addEventListener('mouseleave', function () {
+      window.innerDocClick = false;
+    });
+  </script>
+  <title>pc-单页</title>
+</head>
+
+<body class="react-body">
+  <ul id="UTB" style="display: none"></ul>
+  <!-- 工作区域 -->
+  <div id="exApp" class="react-app">
+    <div class="index-loading-container">
+      <div class="index-content">
+        <span class="index-title">pc-单页</span>
+        <div class="index-img">
+          <span class="index-loading"></span><span class="index-loading-text">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <!-- 预加载一个较大的图片 -->
+    <img src="./static/img/loading.gif" alt="loading" style="display: none" />
+  </div>
+</body>
+
+</html>

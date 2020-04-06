@@ -1,0 +1,9 @@
+node_modules/
+log/
+static/
+dist
+build/**
+config/**
+src/common/router.js
+babel.config.js
+jsconfig.json
