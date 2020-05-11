@@ -13,7 +13,7 @@ import {
 const check = {
   /**
    * 判断单个字符是否中文
-   * @author sunweiibin
+   * @author xuwenkang
    * @param {String} char 需要进行判断的单个字符
    * @returns {Boolean}
    */
@@ -27,7 +27,7 @@ const check = {
   },
   /**
    * 判断一个值是否为空，null || undefined || 'null' || ''
-   * @author sunweibin
+   * @author xuwenkang
    * @param {*} v 传递的值
    * @returns {Boolean}
    */
@@ -39,7 +39,7 @@ const check = {
   },
   /**
    * 判断一个字符串是否手机号码
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    */
   isCellPhone(v) {
@@ -47,7 +47,7 @@ const check = {
   },
   /**
    * 判断一个字符串是否座机
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    */
   isTelPhone(v) {
@@ -55,7 +55,7 @@ const check = {
   },
   /**
    * 判断一个字符串是否电子邮箱
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    */
   isEmail(v) {
@@ -64,7 +64,7 @@ const check = {
 
   /**
    * 判断一个字符串是否符合统一社会信用码的格式
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    * @return {Boolean}
    */
@@ -74,7 +74,7 @@ const check = {
 
   /**
    * 判断一个字符串是否符合18位身份证号码的格式
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    * @return {Boolean}
    */
@@ -84,7 +84,7 @@ const check = {
 
   /**
    * 判断一个字符串是否符合15位身份证号码的格式
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    * @return {Boolean}
    */
@@ -93,7 +93,7 @@ const check = {
   },
   /**
    * 判断一个字符串是否只含有字母和数字
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    * @return {Boolean}
    */

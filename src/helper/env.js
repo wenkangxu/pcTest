@@ -26,7 +26,7 @@ function getOsVersion() {
 const env = {
   /**
    * 获取当前操作系统的
-   * @author sunweibin
+   * @author xuwenkang
    * @param {null}
    * @returns {string}
    */
@@ -80,7 +80,7 @@ const env = {
   },
   /**
    * 判断当前浏览器是否IE
-   * @author sunweibin
+   * @author xuwenkang
    * @returns {Boolean}
    */
   isIE() {
@@ -88,7 +88,7 @@ const env = {
   },
   /**
    * 判断当前浏览器是否Chrome
-   * @author sunweibin
+   * @author xuwenkang
    * @returns {Boolean}
    */
   isChrome() {
@@ -96,7 +96,7 @@ const env = {
   },
   /**
    * 判断当前浏览器是否Safari
-   * @author sunweibin
+   * @author xuwenkang
    * @returns {Boolean}
    */
   isSafari() {
@@ -104,7 +104,7 @@ const env = {
   },
   /**
    * 判断当前浏览器是否Firefox
-   * @author sunweibin
+   * @author xuwenkang
    * @returns {Boolean}
    */
   isFirefox() {

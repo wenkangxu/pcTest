@@ -52,7 +52,7 @@ function isInt(value) {
 
 /**
  * 数字格式化
- * @author sunweibin
+ * @author xuwenkang
  * @param {String|Number} no 需要进行千分位格式化的数字或者数字字符串
  * @param {Boolean} decimalNeedFormat=true 小数部分是否进行格式化
  * @param {String} thousandSeq=',' 千分位格式化符号
@@ -84,7 +84,7 @@ function thousandFormat(no = 0, decimalNeedFormat = true, thousandSeq = ',', isR
 
 /**
  * 数字取小数点后几位
- * @author Liujianshu
+ * @author xuwenkang
  * @param {String|Number} 需要操作的数字
  * @param {String|Number} 需要取小数点后几位，默认为两位
  * @returns {String} 格式化后的字符串
@@ -103,7 +103,7 @@ function toFixed(value = '', length = 2) {
 }
 
 /**
- * @author LiuJianShu
+ * @author xuwenkang
  * @description 对小数格式化是否四舍五入
  * @param {String|Number} 需要操作的数字
  * @param {Number} 保留小数点后几位
@@ -130,7 +130,7 @@ function formatRound(num = 0, floatLength = 2, isRound = true) {
 }
 
 /**
- * @author LiuJianShu
+ * @author xuwenkang
  * @description 数字转化为单位显示
  * @param {Object} 参数对象
  * @param {Number|String} num 需要处理的数字

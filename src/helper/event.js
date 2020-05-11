@@ -59,7 +59,7 @@ const event = {
    * 最新的W3C标准中已经废弃了createEvent等相关方法，
    * 不过目前发现新的Event接口好像浏览器实现有问题，
    * 所以目前还是使用createEvent方法
-   * @author sunweibin
+   * @author xuwenkang
    * @param {HEMLElement} dom DOM元素
    * @param {String} type 事件类型字符串 取值'UIEvents' || 'MouseEvents' || 'HTMLEvents'
    * @param {String} name 事件名称字符串 例如: 'click'
@@ -79,7 +79,7 @@ const event = {
   },
   /**
    * 触发Click事件
-   * @author sunweibin
+   * @author xuwenkang
    * @param {HEMLElement} dom DOM元素
    * @param {Boolean} canBubble=true 是否冒泡
    * @param {Boolean} cancelable=true 是否可以阻止事件默认行为
@@ -89,7 +89,7 @@ const event = {
   },
   /**
    * 触发mousedown事件
-   * @author sunweibin
+   * @author xuwenkang
    * @param {HEMLElement} dom DOM元素
    * @param {Boolean} canBubble=true 是否冒泡
    * @param {Boolean} cancelable=true 是否可以阻止事件默认行为
