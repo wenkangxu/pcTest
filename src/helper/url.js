@@ -73,7 +73,6 @@ const url = {
     return _.includes(pathname, 'newIndex');
   },
 
-
   /**
    * 根据当前路径，新开一个浏览器Tab,所需要使用的，类似重新load下整个页面
    *

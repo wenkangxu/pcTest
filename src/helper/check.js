@@ -12,7 +12,7 @@ import {
 const check = {
   /**
    * 判断单个字符是否中文
-   * @author sunweiibin
+   * @author xuwenkang
    * @param {String} char 需要进行判断的单个字符
    * @returns {Boolean}
    */
