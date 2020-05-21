@@ -3,12 +3,12 @@ import { createHashHistory } from 'history';
 import createLoading from 'dva-loading';
 import { createLogger } from 'redux-logger';
 import { message, Modal } from 'antd';
-import * as magic from 'magic';
+// import * as magic from 'magic';
 // import _ from 'lodash';
 import routerComponent from './router';
 
-window.magic = magic;
-console.log('magic', magic);
+// window.magic = magic;
+// console.log('magic', magic);
 // 错误处理
 const onError = (e) => {
   const { message: msg, duration = 3 } = e;
