@@ -55,3 +55,8 @@ app.router(routerComponent);
 
 // 5. Start
 app.start('#exApp');
+// message.error('222');
+// Modal.confirm({
+//   title: '请确认',
+//   content: 'bababab',
+// });

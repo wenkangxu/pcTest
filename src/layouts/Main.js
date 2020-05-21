@@ -3,7 +3,7 @@
  * @Description: 最外层的框架主组件
  * @Date: 2020-05-20 21:33:26
  * @Last Modified by: xuwenkang
- * @Last Modified time: 2020-05-21 17:02:01
+ * @Last Modified time: 2020-05-21 17:19:44
 */
 
 import React, { PureComponent } from 'react';
@@ -15,7 +15,7 @@ import {
   Switch,
   routerRedux,
 } from 'dva/router';
-import { LocaleProvider } from 'antd';
+import { LocaleProvider, Input, DatePicker } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import { generateEffect } from '@/helper/dva';
 
@@ -85,6 +85,8 @@ export default class Main extends PureComponent {
                 {
                   this.renderRoutes()
                 }
+                <Input />
+                <DatePicker />
               </div>
             </div>
           </div>
