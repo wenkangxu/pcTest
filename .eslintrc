@@ -38,6 +38,8 @@
     "react/prefer-stateless-function": [0],
     "react/no-danger": [0],
     "react/destructuring-assignment": [0],
+    "react/static-property-placement": [0],
+    "react/jsx-props-no-spreading": [0],
     "jsx-a11y/media-has-caption": [0],
     "jsx-a11y/no-static-element-interactions": [0],
     "jsx-a11y/no-noninteractive-element-interactions": [0],
@@ -70,5 +72,10 @@
     "fetch": true,
     "EMP_ID": true,
     "$": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
   }
 }

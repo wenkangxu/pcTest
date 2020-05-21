@@ -1,4 +1,3 @@
-import isNumber from 'lodash/isNumber';
 import {
   chinese,
   cellPhone,
@@ -21,25 +20,9 @@ const check = {
     return chinese.test(char);
   },
 
-  // 判断是否为瞄准镜标签
-  isSightingTelescope(str) {
-    return str.indexOf('J') === 0;
-  },
-  /**
-   * 判断一个值是否为空，null || undefined || 'null' || ''
-   * @author sunweibin
-   * @param {*} v 传递的值
-   * @returns {Boolean}
-   */
-  isNull(v) {
-    if (v === null || v === 'null' || v === '' || v === undefined || v === 'undefined') {
-      return true;
-    }
-    return false;
-  },
   /**
    * 判断一个字符串是否手机号码
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    */
   isCellPhone(v) {
@@ -47,7 +30,7 @@ const check = {
   },
   /**
    * 判断一个字符串是否座机
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    */
   isTelPhone(v) {
@@ -55,7 +38,7 @@ const check = {
   },
   /**
    * 判断一个字符串是否电子邮箱
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    */
   isEmail(v) {
@@ -64,7 +47,7 @@ const check = {
 
   /**
    * 判断一个字符串是否符合统一社会信用码的格式
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    * @return {Boolean}
    */
@@ -74,7 +57,7 @@ const check = {
 
   /**
    * 判断一个字符串是否符合18位身份证号码的格式
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    * @return {Boolean}
    */
@@ -84,7 +67,7 @@ const check = {
 
   /**
    * 判断一个字符串是否符合15位身份证号码的格式
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    * @return {Boolean}
    */
@@ -93,19 +76,13 @@ const check = {
   },
   /**
    * 判断一个字符串是否只含有字母和数字
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} v 要验证的字符串
    * @return {Boolean}
    */
   isOnlyAlphabetAndNumber(v) {
     return onlyAlphabetAndNumber.test(v);
   },
-  /**
-   * 判断一个数值类型的返回值是否有效
-   */
-  isNumberEmpty(v) {
-    return !isNumber(v) || Number.isNaN(v);
-  }
 };
 
 export default check;

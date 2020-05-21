@@ -1,11 +1,14 @@
 import dva from 'dva';
-import createHistory from 'history/createHashHistory';
+import { createHashHistory } from 'history';
 import createLoading from 'dva-loading';
 import { createLogger } from 'redux-logger';
 import { message, Modal } from 'antd';
+import * as magic from 'magic';
 // import _ from 'lodash';
 import routerComponent from './router';
 
+window.magic = magic;
+console.log('magic', magic);
 // 错误处理
 const onError = (e) => {
   const { message: msg, duration = 3 } = e;
@@ -28,7 +31,7 @@ const getConfirmation = (msg, callback) => {
 };
 
 
-const history = createHistory({
+const history = createHashHistory({
   getUserConfirmation: getConfirmation,
 });
 
@@ -52,8 +55,3 @@ app.router(routerComponent);
 
 // 5. Start
 app.start('#exApp');
-message.error('222');
-Modal.confirm({
-  title: '请确认',
-  content: 'bababab',
-});

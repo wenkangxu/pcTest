@@ -6,20 +6,19 @@ import {
   routerRedux,
 } from 'dva/router';
 
-// import { getRouterData } from './common/router';
-// import App from './layouts/Main';
+import { getRouterData } from './common/router';
+import App from './layouts/Main';
 
 const { ConnectedRouter } = routerRedux;
 
 export default function Routers({ history, app }) {
-  // const routerData = getRouterData(app);
+  const routerData = getRouterData(app);
   return (
     <ConnectedRouter history={history}>
       <Switch>
         <Route
           path="/"
-          // render={props => <App {...props} routerData={routerData} />}
-          render={(props) => <div>test</div>}
+          render={(props) => <App {...props} routerData={routerData} />}
         />
       </Switch>
     </ConnectedRouter>

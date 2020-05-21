@@ -8,6 +8,7 @@ var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 var HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var baseWebpackConfig = require('./webpack.base.config');
 var { external, getExternalFiles } = require('./externals');
 var utils = require('./utils')
@@ -156,5 +157,6 @@ module.exports = merge(baseWebpackConfig, {
       publicPath: config.build.assetsPublicPath,
     }),
     new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /zh-cn/),
+    new BundleAnalyzerPlugin(),
   ]
 });

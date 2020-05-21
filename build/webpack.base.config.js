@@ -21,6 +21,9 @@ module.exports = {
    ],
     alias: {
       '@/components': resolve('src/components'),
+      '@/helper': resolve('src/helper'),
+      '@/utils': resolve('src/utils'),
+      '@/layouts': resolve('src/layouts'),
     }
   },
   module: {
@@ -60,5 +63,8 @@ module.exports = {
       }
     ],
     // noParse: [new RegExp('node_modules/localforage/dist/localforage.js')]
+  },
+  performance: {
+    hints: false
   }
 }

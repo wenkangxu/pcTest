@@ -4,7 +4,7 @@ import _ from 'lodash';
 const time = {
   /**
    * 将时间格式字符串修改为YYYY-MM-DD格式
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} str 后端接口返回的时间格式字符串
    * @param {String} formatter='YYYY-MM-DD' 需要装换成的时间格式
    * @returns {String} 格式化后的时间字符串
@@ -19,7 +19,7 @@ const time = {
 
   /**
    * 获取今天是周几
-   * @author sunweibin
+   * @author xuwenkang
    * @param {Number| Date} d Date对象或者是数字(0,1,2,3,4,5,6)
    */
   weekDay(d) {
@@ -30,7 +30,7 @@ const time = {
 
   /**
    * 根据周期字符串返回周期开始时间、结束时间、周期时间段的对象
-   * @author sunweibin
+   * @author xuwenkang
    * @param {String} cycleType 周期字符串
    */
   getDurationString(cycleType, maxDataDt, outputFomater = 'YYYYMMDD', isFullPeriod = false) {

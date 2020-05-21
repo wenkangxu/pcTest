@@ -7,7 +7,7 @@ const canUseConsoleFlag = true;
 const os = {
   /**
    * 将字符串添加到剪贴板中
-   * @author sunweibin
+   * @author xuwenkang
    * @param  {string} value 需要将复制的字符串
    */
   copyToClipBoard(value) {
